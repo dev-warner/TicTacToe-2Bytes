@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=lcov --reporter=text-summary  ava --verbose --watch",
-    "coverage": "http-server ./coverage"
+    "test": "nyc --reporter=lcov --reporter=text-summary ava --verbose",
+    "test:auto": "nyc --reporter=lcov --reporter=text-summary  ava --verbose --watch",
+    "coverage": "http-server ./coverage",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "keywords": [],
   "author": "",
